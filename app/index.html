@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-in">
+    <div class="brand">
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+      <h1>Leonida Ledger</h1>
+      <p class="standfirst">Every one of the 55 official trophies with its name, description and grade as PlayStation
+      publishes them, a guide to each in our own words with its sources cited, a roadmap to the platinum, and the
+      missable trophies flagged from the official descriptions themselves.</p>
+    </div>
+    <div class="scoreboard" aria-label="Your progress">
+      <p class="big-count"><span id="earned-count">0</span><span class="of"> / 55 earned</span></p>
+      <div class="bar"><div id="bar-fill" class="bar-fill"></div></div>
+      <p id="grade-tally" class="grade-tally"></p>
+      <p id="platinum-line" class="platinum-line"></p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <a href="#/checklist" data-tab="checklist">Checklist</a>
+    <a href="#/roadmap" data-tab="roadmap">Roadmap to the platinum</a>
+    <a href="#/missables" data-tab="missables">Missables</a>
+    <a href="#/save" data-tab="save">Save, export &amp; import</a>
+  </nav>
+</header>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="toolbar">
+      <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind"></div>
+      <div class="tools">
+        <label class="search">Search <input id="search" type="search" placeholder="trophy, mission, place…"></label>
+        <label>Grade
+          <select id="grade-filter">
+            <option value="all">All grades</option>
+            <option value="platinum">Platinum</option>
+            <option value="gold">Gold</option>
+            <option value="silver">Silver</option>
+            <option value="bronze">Bronze</option>
+          </select>
+        </label>
+        <label>Show
+          <select id="state-filter">
+            <option value="all">All trophies</option>
+            <option value="earned">Earned</option>
+            <option value="unearned">Not yet earned</option>
+          </select>
+        </label>
+        <label class="switch"><input type="checkbox" id="spoiler-toggle"> Spoiler shield: hide story trophies until earned</label>
+      </div>
+      <p id="result-line" class="result-line"></p>
+    </div>
+    <div class="split">
+      <ol id="trophy-list" class="trophy-list"></ol>
+      <aside id="detail" class="detail" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="roadmap-body"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <div id="missables-body"></div>
+  </section>
+
+  <section id="view-save" class="view" hidden>
+    <div id="save-body"></div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <p>Data: the official PlayStation 5 trophy list for Grand Theft Auto VI — 55 trophies: 1 platinum, 2 gold,
+  6 silver, 46 bronze — as listed by Exophase and PSNProfiles, the two agreeing on every name, description and grade.
+  Guides are our own words and cite their sources beside each trophy. This app is a fan-made tool: it loads nothing
+  from the network, stores progress only in your browser, and shows no Rockstar Games logo or artwork.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
